@@ -51,6 +51,7 @@ public:
 
 int main(int argc, char ** argv)
 {
+  printf("test\n");
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<ClockRecorder>());
   rclcpp::shutdown();
